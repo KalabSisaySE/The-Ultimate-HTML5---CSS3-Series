@@ -31,6 +31,27 @@
         ul {
             list-style-type: none;
         }
+        
+        table,
+        td,
+        th {
+            border: 1px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        
+        tfoot {
+            text-align: left;
+        }
+        
+        .product {
+            background-color: gold;
+            width: 300px;
+        }
+        
+        .highlight {
+            background-color: yellow;
+        }
     </style>
 </head>
 
@@ -116,6 +137,61 @@
         <dd>Responsive Design</dd>
         <dd>Search Engine Optimization</dd>
     </dl>
+
+    <h2>9 - Tables</h2>
+    <!-- nowadays using tables to layout pages is considered a bad practice -->
+    <!-- only used for displaying tabular data -->
+    <!-- DRY - Don't Repeat Yourself -->
+    <!-- Border-Collapse - Get rid off space between the borders of neighboring cells -->
+    <!-- thead and tbody - to tell search engines we have sections in our table -->
+    <!-- Semantic HTML - Meaningful HTML -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Expenses</th>
+            </tr>
+
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Marketing</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Accounting</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$300</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>10 - Containers</h2>
+    <!-- div element is a block level element -->
+    <!-- span is also a generic container like a div -->
+    <!-- span is an inline element -->
+    <!-- span often used for styling text -->
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">Link</a>
+    </div>
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">Link</a>
+    </div>
+
+    <p>
+        <span class="highlight">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Ea, a!
+    </p>
 </body>
 
 </html>
