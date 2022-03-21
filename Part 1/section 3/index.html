@@ -52,6 +52,10 @@
         .highlight {
             background-color: yellow;
         }
+        
+        .article {
+            border: 2px solid grey;
+        }
     </style>
 </head>
 
@@ -192,6 +196,27 @@
     <p>
         <span class="highlight">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Ea, a!
     </p>
+
+    <h2>11 - Semantic Elements</h2>
+    <!-- div and span are generic Containers (general purpose)-->
+    <!-- article, figure, mark, time are semantic containers (more meaningful and descriptive) -->
+    <!-- blockpost -->
+    <!-- article - an independent, self-contained content example forum post, comments, reviews, postcards -->
+    <article class="article">
+        <h1>Heading</h1>
+        <p>
+            Published
+            <time datetime="2021-01-01 17:00"> January 1 2021 05:00pm</time>
+        </p>
+        <p>
+            <mark>Lorem</mark> ipsum dolor sit amet consectetur, adipisicing elit. Rerum dicta maxime sed vel saepe laboriosam nobis consequatur iste quae a at laborum facere, cum aliquam porro facilis repellendus dignissimos autem id commodi atque numquam
+            labore. Ab a unde, et perspiciatis ad, ipsa deserunt omnis nostrum vero culpa, beatae fugiat voluptatem!
+        </p>
+        <figure>
+            <img src="" alt="" />
+            <figcaption>My coffee this morning</figcaption>
+        </figure>
+    </article>
 </body>
 
 </html>
