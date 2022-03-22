@@ -5,3 +5,11 @@ body {
 p {
     color: orange;
 }
+
+a[target] {
+    color: aqua;
+}
+
+a[href^="https"][href$=".com"] {
+    color: green;
+}
