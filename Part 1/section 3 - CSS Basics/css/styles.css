@@ -45,3 +45,8 @@ a:focus {
 .pseudo::before {
     content: '...';
 }
+
+.note {
+    border: 2px dotted grey;
+    display: inline-block;
+}
