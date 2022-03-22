@@ -2,7 +2,7 @@ body {
     margin: 10px;
 }
 
-p {
+p.css {
     color: orange;
 }
 
@@ -31,4 +31,17 @@ a:link {
 a:hover,
 a:focus {
     color: deeppink;
+}
+
+.pseudo::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.pseudo::selection {
+    background-color: purple;
+}
+
+.pseudo::before {
+    content: '...';
 }
