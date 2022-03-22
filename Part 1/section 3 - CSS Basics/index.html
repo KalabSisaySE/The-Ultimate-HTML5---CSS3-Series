@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        p {
+            color: black;
+        }
+        
+        #first {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +30,9 @@
 
     <h2>2 - Providing CSS</h2>
     <!-- embedded stylesheet violates separation of concerns -->
+    <!-- to overwrite external style use embeded style -->
+    <p id="first">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
 </body>
 
 </html>
